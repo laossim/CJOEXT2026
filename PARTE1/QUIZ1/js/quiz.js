@@ -1,4 +1,12 @@
 function somarPonto() {
+
+//
+  
+function zerarPontos() {
+  localStorage.setItem("pontos", 0);
+}
+
+//
   let pontos = Number(localStorage.getItem("pontos")) || 0;
   localStorage.setItem("pontos", pontos + 1);
 }
